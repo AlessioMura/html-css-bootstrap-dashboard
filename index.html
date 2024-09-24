@@ -14,10 +14,10 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img style="width: 60px;" src="./img/duck.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler outline-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,16 +25,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Catalogo Libri</a>
+                            <a class="nav-link active " aria-current="page" href="#">Catalogo Libri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Anagrafica Utenti</a>
+                            <a class="nav-link " href="#">Anagrafica Utenti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Storico Prestiti</a>
+                            <a class="nav-link " href="#">Storico Prestiti</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Help</a>
+                            <a class="nav-link " href="#">Help</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -51,10 +51,12 @@
 
         <div class="container">
             <div class="row justify-content-between my-4">
-                <div class="col-3">
+                <div class="col">
                     <h1>Catalogo Libri</h1>
                 </div>
-                <div class="col-2"><button type="button" class="btn btn-primary">Aggiungi Libro</button></div>
+                <div class="col d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
             </div>
         </div>
 
@@ -63,7 +65,7 @@
                 <thead>
                     <tr>
                         <th class="col-6">Titolo</th>
-                        <th class="col">Data prestito</th>
+                        <th class="col d-sm-none d-md-table-cell">Data prestito</th>
                         <th class="col">Stato</th>
                         <th class="col">Azioni</th>
                     </tr>
@@ -71,7 +73,7 @@
                 <tbody>
                     <tr>
                         <td class="bg-light">I pilastri della terra</td>
-                        <td class="bg-light">-</td>
+                        <td class="bg-light d-sm-none d-md-table-cell">-</td>
                         <td class="bg-light"><span class="badge text-bg-success my-2">Disponibile</span>
                         </td>
                         <td class="bg-light">
@@ -83,7 +85,7 @@
                     </tr>
                     <tr>
                         <td>I promessi sposi</td>
-                        <td>-</td>
+                        <td class=" d-sm-none d-md-table-cell">-</td>
                         <td><span class="badge text-bg-success my-2">Disponibile</span></td>
                         <td>
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -94,7 +96,7 @@
                     </tr>
                     <tr>
                         <td class="bg-light">Il signore degli anelli</td>
-                        <td class="bg-light">18/10/2023</td>
+                        <td class="bg-light d-sm-none d-md-table-cell">18/10/2023</td>
                         <td class="bg-light"><span class="badge text-bg-warning text-white my-2">In prestito</span></td>
                         <td class="bg-light">
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -105,7 +107,7 @@
                     </tr>
                     <tr>
                         <td>Harry Potter e la pietra filosofale</td>
-                        <td>-</td>
+                        <td class=" d-sm-none d-md-table-cell">-</td>
                         <td><span class="badge text-bg-success my-2">Disponibile</span></td>
                         <td>
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -116,7 +118,7 @@
                     </tr>
                     <tr>
                         <td class="bg-light">Il codice Da Vinci</td>
-                        <td class="bg-light">-</td>
+                        <td class="bg-light d-sm-none d-md-table-cell">-</td>
                         <td class="bg-light"><span class="badge text-bg-danger my-2">Non disponibile</span></td>
                         <td class="bg-light">
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -127,7 +129,7 @@
                     </tr>
                     <tr>
                         <td>Shining</td>
-                        <td>-</td>
+                        <td class=" d-sm-none d-md-table-cell">-</td>
                         <td><span class="badge text-bg-success my-2">Disponibile</span></td>
                         <td>
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -138,7 +140,7 @@
                     </tr>
                     <tr>
                         <td class="bg-light">La divina commedia</td>
-                        <td class="bg-light">21/09/2023</td>
+                        <td class="bg-light d-sm-none d-md-table-cell">21/09/2023</td>
                         <td class="bg-light"><span class="badge text-bg-warning text-white my-2">In prestito</span></td>
                         <td class="bg-light">
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -149,7 +151,7 @@
                     </tr>
                     <tr>
                         <td>Il trono di spade</td>
-                        <td>-</td>
+                        <td class=" d-sm-none d-md-table-cell">-</td>
                         <td><span class="badge text-bg-success my-2">Disponibile</span></td>
                         <td>
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -160,7 +162,7 @@
                     </tr>
                     <tr>
                         <td class="bg-light">Il mondo di Sofia</td>
-                        <td class="bg-light">-</td>
+                        <td class="bg-light d-sm-none d-md-table-cell">-</td>
                         <td class="bg-light"><span class="badge text-bg-danger my-2">Non disponibile</span></td>
                         <td class="bg-light">
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -171,7 +173,7 @@
                     </tr>
                     <tr>
                         <td>Le cronche di Narnia: il leone, la strega e l'armadio</td>
-                        <td>25/07/2023</td>
+                        <td class=" d-sm-none d-md-table-cell">25/07/2023</td>
                         <td><span class="badge text-bg-warning text-white my-2">In prestito</span></td>
                         <td>
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -182,7 +184,7 @@
                     </tr>
                     <tr>
                         <td class="bg-light">Il piccolo principe</td>
-                        <td class="bg-light">-</td>
+                        <td class="bg-light d-sm-none d-md-table-cell">-</td>
                         <td class="bg-light"><span class="badge text-bg-success my-2">Disponibile</span></td>
                         <td class="bg-light">
                             <button type="button" class="btn btn-outline-secondary"><i
@@ -193,7 +195,7 @@
                     </tr>
                     <tr>
                         <td>La storia infinita</td>
-                        <td>-</td>
+                        <td class=" d-sm-none d-md-table-cell">-</td>
                         <td><span class="badge text-bg-success my-2">Disponibile</span></td>
                         <td>
                             <button type="button" class="btn btn-outline-secondary"><i
