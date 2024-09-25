@@ -61,8 +61,46 @@
                         <label class="text-secondary" for="floatingInput2">Inserisci il cognome dell'autore</label>
                     </div>
                 </div>
-
             </div>
+
+            <div class="my-3">
+                <h4>Titolo</h4>
+                <div class="form-floating">
+                    <input class="form-control" id="floatingInput" placeholder="title_name"
+                        aria-describedby="title_lng_version">
+                    <label class="text-secondary" for="floatingInput">Inserisci il titolo del libro</label>
+                </div>
+                <div id="title_lng_version" class="form-text">
+                    Titolo versione italiana
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md my-3">
+                    <h4>Genere</h4>
+                    <select class="form-select form-select-lg">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Giallo</option>
+                        <option value="2">Fantasy</option>
+                        <option value="3">Romantico</option>
+                    </select>
+                </div>
+                <div class="col-md my-3">
+                    <h4>Anno di Pubblicazione</h4>
+                    <div class="form-floating">
+                        <input class="form-control" id="floatingInput_year" placeholder="pub_year">
+                        <label class="text-secondary" for="floatingInput_year">Inserisci l'anno</label>
+                    </div>
+                </div>
+                <div class="col-md my-3">
+                    <h4>ISBN#</h4>
+                    <div class="form-floating">
+                        <input class="form-control" id="floatingInput_isbn" placeholder="isbn_code">
+                        <label class="text-secondary" for="floatingInput_isbn">Inserisci il codice ISBN#</label>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
 
     </main>
